@@ -13,7 +13,7 @@ try:
 except FileNotFoundError:
     st.error(f"Could not find file at {data_path}. Make sure the path is correct.")
     st.stop()
-
+print(df.head())
 df['date'] = pd.to_datetime(df['date'])
 df['store_nbr'] = df['store_nbr'].astype('category')
 df['item_nbr'] = df['item_nbr'].astype('category')
