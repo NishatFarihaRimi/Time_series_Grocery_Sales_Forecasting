@@ -1,0 +1,39 @@
+digest: d34df241
+name: dataset
+profile: '{"num_rows": 1887545, "num_elements": 84939525}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "store_nbr", "required": true},
+  {"type": "long", "name": "item_nbr", "required": true}, {"type": "double", "name":
+  "id", "required": false}, {"type": "long", "name": "onpromotion", "required": true},
+  {"type": "long", "name": "outlier", "required": true}, {"type": "double", "name":
+  "dcoilwtico", "required": false}, {"type": "long", "name": "transactions", "required":
+  true}, {"type": "long", "name": "is_holiday", "required": true}, {"type": "long",
+  "name": "is_event", "required": true}, {"type": "long", "name": "dayofweek", "required":
+  true}, {"type": "long", "name": "is_weekend", "required": true}, {"type": "long",
+  "name": "month", "required": true}, {"type": "long", "name": "day", "required":
+  true}, {"type": "long", "name": "weekofyear", "required": true}, {"type": "long",
+  "name": "year", "required": true}, {"type": "long", "name": "is_month_start", "required":
+  true}, {"type": "long", "name": "is_month_end", "required": true}, {"type": "double",
+  "name": "lag_1", "required": false}, {"type": "double", "name": "lag_7", "required":
+  false}, {"type": "double", "name": "lag_30", "required": false}, {"type": "double",
+  "name": "lag_14", "required": false}, {"type": "double", "name": "lag_21", "required":
+  false}, {"type": "double", "name": "lag_60", "required": false}, {"type": "double",
+  "name": "rolling_mean_7", "required": false}, {"type": "double", "name": "rolling_std_7",
+  "required": false}, {"type": "double", "name": "rolling_mean_14", "required": false},
+  {"type": "double", "name": "rolling_std_14", "required": false}, {"type": "double",
+  "name": "rolling_mean_30", "required": false}, {"type": "double", "name": "rolling_std_30",
+  "required": false}, {"type": "double", "name": "ewm_mean_7", "required": false},
+  {"type": "double", "name": "ewm_std_7", "required": false}, {"type": "double", "name":
+  "ewm_mean_14", "required": false}, {"type": "double", "name": "ewm_std_14", "required":
+  false}, {"type": "double", "name": "ewm_mean_30", "required": false}, {"type": "double",
+  "name": "ewm_std_30", "required": false}, {"type": "long", "name": "next_is_holiday",
+  "required": true}, {"type": "long", "name": "next_is_event", "required": true},
+  {"type": "double", "name": "outlier_lag_1", "required": false}, {"type": "double",
+  "name": "outlier_lag_7", "required": false}, {"type": "double", "name": "outlier_lag_14",
+  "required": false}, {"type": "double", "name": "outlier_lag_30", "required": false},
+  {"type": "double", "name": "outlier_rolling_mean_7", "required": false}, {"type":
+  "double", "name": "unit_sales_7d_avg", "required": false}, {"type": "double", "name":
+  "unit_sales_30d_avg", "required": false}, {"type": "double", "name": "promo_last_week",
+  "required": false}]}'
+source: '{"tags": {"mlflow.user": "nishat", "mlflow.source.name": "/opt/anaconda3/lib/python3.12/site-packages/ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

@@ -1,0 +1,10 @@
+artifact_location: file:///Users/nishat/Desktop/Grocery_Sales_Forecasting/Note_books/mlruns/0/models/m-da775341df114190939f54f294ba6ab7/artifacts
+creation_timestamp: 1750255277198
+experiment_id: '0'
+last_updated_timestamp: 1750255279089
+model_id: m-da775341df114190939f54f294ba6ab7
+model_type: null
+name: model
+source_run_id: bc8fe1a592e743d08566c02503ef004b
+status: 2
+status_message: null
