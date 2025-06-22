@@ -42,7 +42,7 @@ Actual vs. predicted unit sales
 - Prediction: Forecasts are generated using a pre-trained XGBoost model.
 - Evaluation & Visualization: Outputs include error metrics and visual comparison charts.
 
-## Project Structure
+## 🧱 Project Structure
 
 ```text
 ├── app/
@@ -67,44 +67,43 @@ Additional notebooks support preprocessing and exploratory analysis.
 ## Reproducing the Model (Google Colab)
 To retrain or experiment in Google Colab:
 
-1. Download the dataset:
+1. Download the training dataset from manually from this Google Drive [link](https://drive.google.com/file/d/1lcXGfg32fbnm8_12WaAWejymi0cu2DXP/view?usp=sharing):
 train_Guayas_final.csv
 
 2. Upload it to your Colab environment.
 
 3. Run the notebooks in the project to retrain the XGBoost model.
 
-To retrain or validate the model in Google Colab, follow these steps:
+## Clone the repository:
 
-Download the training dataset from the following link:
-train_final.csv
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+Create a virtual environment (optional but recommended):
 
-Upload the file to your Colab environment.
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-Open and run the Jupyter notebooks from the project to reproduce the model training and forecasting steps.
-
-Alternatively, you can test the app locally by following these steps:
-
-You can also run the app on your local machine:
-
-Clone this repository and navigate to the project folder.
-
-Create a virtual environment (optional but recommended).
-
-Install dependencies using:
-
+Install the dependencies:
 pip install -r requirements.txt
-Launch the Streamlit app with:
+Run the Streamlit app:
 
 streamlit run streamlit_app.py
-The app will open in your default browser, allowing you to generate predictions for Jan–Mar 2014.
+The app will open in your default browser.
 
-The app uses a large dataset (train_final.csv, approx. 905.9 MB). On first run, this file will be downloaded to the /data folder. Please allow a few minutes for this process to complete.
----
+📌 Note: On the first run, the app will download train_Guayas_final.csv (~905.9 MB) into the /data directory. On first run, this file will be downloaded to the /data folder. Please allow a few minutes for this process to complete.
 
-## Requirements
+## 📂  Configuration
+Ensure the following paths are correctly set in app/config.py:
+DATA_PATH = "path/to/your/train_final.csv"
+MODEL_PATH = "path/to/your/xgboost_model.pkl"
+SCALER_PATH = "path/to/your/scaler.pkl"
 
-Key dependencies include:
+
+## 📦 Requirements
+
+Minimum: Python 3.8+
+
+Main packages used:
 
 Streamlit
 
@@ -112,13 +111,15 @@ Pandas
 
 NumPy
 
-Scikit-learn
-
-Matplotlib
+scikit-learn
 
 XGBoost
 
-To view all dependencies, refer to the requirements.txt file in the project root.
+Matplotlib
+
+Install all dependencies using:
+
+pip install -r requirements.txt.
 
 ---
 
