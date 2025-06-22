@@ -158,8 +158,13 @@ conda activate time_series_env
 ```bash
 pip install -r requirements.txt
 ```
-#### Step 4: Run the Notebooks
+#### Step 5: Run the Notebooks
 Execute notebooks in order (1_ → 7_) to reproduce the full workflow: from raw data to forecasting models.
+
+#### Step 6: Run the Streamlit app
+```bash
+streamlit run streamlit_app.py
+```
 
 
 ## ✨ Future Work
