@@ -57,12 +57,11 @@ Actual vs. predicted unit sales
 └── README.md                  # This file 
 ```
 ## Model Training
-The model was trained in Jupyter Notebook using VS Code.
+- The model was trained in Jupyter Notebook using VS Code.
 
-Main notebook:
-Used Notebooks For 7_XGboost_Model.ipynb.ipynb
+- Main notebook: Used Notebooks For 7_XGboost_Model.ipynb
 
-Additional notebooks support preprocessing and exploratory analysis.
+- Additional notebooks support preprocessing and exploratory analysis.
 
 ## Reproducing the Model (Google Colab)
 To retrain or experiment in Google Colab:
@@ -74,20 +73,30 @@ train_Guayas_final.csv
 
 3. Run the notebooks in the project to retrain the XGBoost model.
 
-## Clone the repository:
 
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-Create a virtual environment (optional but recommended):
+## Running the App Locally
+### Step 1: Clone the repository:
 
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+```bash
+git clone https://github.com/NishatFarihaRimi/Time_series_Grocery_Sales_Forecasting.git
+cd Time_series_Grocery_Sales_Forecasting
 
-Install the dependencies:
+```
+### Step 2: Create a virtual environment (optional but recommended):
+
+```bash
+conda create -n time_series_env python=3.8
+conda activate time_series_env
+```
+
+### Step 3: Install the dependencies:
+```bash
 pip install -r requirements.txt
-Run the Streamlit app:
-
+```
+### Step 4: Run the Streamlit app:
+```bash
 streamlit run streamlit_app.py
+```
 The app will open in your default browser.
 
 📌 Note: On the first run, the app will download train_Guayas_final.csv (~905.9 MB) into the /data directory. On first run, this file will be downloaded to the /data folder. Please allow a few minutes for this process to complete.
@@ -119,7 +128,9 @@ Matplotlib
 
 Install all dependencies using:
 
-pip install -r requirements.txt.
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
