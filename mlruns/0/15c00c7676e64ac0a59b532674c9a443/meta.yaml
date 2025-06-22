@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/15c00c7676e64ac0a59b532674c9a443/artifacts
+end_time: 1750584538319
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 15c00c7676e64ac0a59b532674c9a443
+run_name: kindly-finch-315
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750584535537
+status: 3
+tags: []
+user_id: nishat

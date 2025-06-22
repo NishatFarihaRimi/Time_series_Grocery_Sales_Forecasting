@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/bcb006db19234a23a3b955d04fec50c9/artifacts
+end_time: 1750583863417
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bcb006db19234a23a3b955d04fec50c9
+run_name: abundant-cat-998
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750583858651
+status: 3
+tags: []
+user_id: nishat
