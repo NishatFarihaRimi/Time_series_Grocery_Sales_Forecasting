@@ -16,7 +16,7 @@ The primary goal is to predict future sales of items sold in different store loc
 
 You can also reproduce the dataset by following the step-by-step data download and extraction instructions provided in the notebook:
 
-📓 Note_books/1_Kaggle_API_Data_download.ipynb
+📓 Notebook/1_Kaggle_API_Data_download.ipynb
 
 This notebook uses the Kaggle API to fetch the dataset directly from the competition page. Make sure you have your kaggle.json API token ready, and follow the notebook in Google Colab or locally. Ensure the .csv files are located inside the Data/ directory before running the notebooks or app. This folder is used as the data source throughout the project.
 
@@ -54,7 +54,7 @@ Grocery_Sales_Forecasting//
 │   ├── __init__.py                 # Data module initialization
 │   └── data_utils.py               # Utility functions for data handling
 │
-├── Note_books/                     # Jupyter notebooks for analysis and modeling
+├── Notebook/                     # Jupyter notebooks for analysis and modeling
 │   ├── 1_Kaggle_API_Data_download.ipynb
 │   ├── 2_Filter_Train_Data_for_Guayas.ipynb
 │   ├── 3_EDA.ipynb                 # Exploratory Data Analysis
