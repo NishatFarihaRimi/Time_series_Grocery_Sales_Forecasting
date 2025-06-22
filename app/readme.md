@@ -32,9 +32,6 @@ Actual vs. predicted unit sales
 -No data is found for the selected store-item pair.
 -Required model or data files are missing or misconfigured.
 
-## Model Training
-
-The XGBoost model used for forecasting was trained in Jupyter Notebook (VS Code). The full training pipeline, including hyperparameter tuning and feature selection, is documented in the notebook:
 
 ### Pipeline
 - Data Loading: Sales data is read from a CSV file.
@@ -47,7 +44,7 @@ The XGBoost model used for forecasting was trained in Jupyter Notebook (VS Code)
 
 ## Project Structure
 
-.
+```text
 ├── app/
 │   └── config.py              # File paths for model, scaler, and data
 ├── model/
@@ -56,12 +53,26 @@ The XGBoost model used for forecasting was trained in Jupyter Notebook (VS Code)
 ├── models/                    # Folder containing saved model files
 ├── data/                      # Folder containing input CSV data
 ├── Used Notebooks For Time Series Analysis/
-│   └── Hyperparameter_Tuning.ipynb  # Model development notebook
-└── README.md                  # This file
+│   └── 7_XGboost_Model.ipynb  # Model development notebook
+└── README.md                  # This file 
+```
+## Model Training
+The model was trained in Jupyter Notebook using VS Code.
 
----
+Main notebook:
+Used Notebooks For 7_XGboost_Model.ipynb.ipynb
 
-## Reproducing the Model
+Additional notebooks support preprocessing and exploratory analysis.
+
+## Reproducing the Model (Google Colab)
+To retrain or experiment in Google Colab:
+
+1. Download the dataset:
+train_Guayas_final.csv
+
+2. Upload it to your Colab environment.
+
+3. Run the notebooks in the project to retrain the XGBoost model.
 
 To retrain or validate the model in Google Colab, follow these steps:
 
