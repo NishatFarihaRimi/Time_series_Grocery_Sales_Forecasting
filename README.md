@@ -47,29 +47,52 @@ If you prefer to generate the data yourself, first download the original dataset
 ## 📁 Project Structure
 
 ```text
-Grocery_Sales_Forecasting/
+
+Grocery_Sales_Forecasting//
 │
-├── app/                              # Streamlit app and trained model
-│   ├── app.py                        # Main application script
-│   └── xgb_model.pkl                 # Pre-trained XGBoost model
+├── Data/                           # Raw and processed data files
+│   ├── __init__.py                 # Data module initialization
+│   └── data_utils.py               # Utility functions for data handling
 │
-├── Data/                             # Data files used for analysis and modeling
-│   └── *.csv                         # (e.g., train_Guayas_final.csv, etc.)
-│
-├── Note_books/                       # Jupyter notebooks for exploration, modeling, and experimentation
+├── Note_books/                     # Jupyter notebooks for analysis and modeling
 │   ├── 1_Kaggle_API_Data_download.ipynb
 │   ├── 2_Filter_Train_Data_for_Guayas.ipynb
-│   ├── 3_EDA.ipynb
+│   ├── 3_EDA.ipynb                 # Exploratory Data Analysis
 │   ├── 4_Data_Preprocessing.ipynb
 │   ├── 5_Feature_Engineering.ipynb
 │   ├── 6_SARIMAX_Holtwinters_Model.ipynb
-│   ├── 7_XGboost_Model.ipynb
+│   └── 7_XGboost_Model.ipynb      # Model training & tuning with XGBoost
 │
-├── MLflow_experiment/                # MLflow experiments and tracking notebooks
-│   └── MLflow_experiment_XGboost.ipynb
+├── app/                           # Main Streamlit app and related files
+│   ├── __pycache__/               # Python cache files (usually gitignored)
+│   ├── __init__.py                # App module initialization
+│   ├── config.py                  # Config variables for file paths
+│   ├── main.py                    # Main Streamlit app script
+│   └── README.md                  # App-specific README (optional)
 │
-├── requirements.txt                  # Python dependencies
-└── README.md                         # Project documentation
+├── mlartifacts/0/models/          # ML artifacts saved by MLflow or similar
+│
+├── mlruns/0/                     # MLflow tracking files and experiment runs
+│   ├── 15c00c7676e64ac0a59b532674c9a443/
+│   ├── 15c9652540c842d3ade62b438cc211fe/
+│   ├── 542eff3e68ba4e4e807fddbcec4b1421/
+│   └── bcb006db19234a23a3b955d04fec50c9/
+│
+├── models/                       # Folder for model metadata and saved models
+│   ├── meta.yaml                 # Model metadata/configuration file
+│
+├── model/                       # Python module for model-related utilities
+│   ├── __pycache__/             # Python cache files (gitignored)
+│   ├── __init__.py              # Model module initialization
+│   ├── model_utils.py           # Functions to load model and scaler
+│   └── xgb_model.pkl            # Pre-trained XGBoost model file
+│
+├── .gitignore                   # Git ignore rules
+├── README.md                    # Project-level README file
+├── mlflow.db                   # MLflow database file (tracking experiments)
+├── requirements.txt            # Python dependencies
+└── xgboost_mlflow.py           # Script for training/logging with MLflow & XGBoost
+
 ```
 🔬 Project Pipeline
 Notebook	Description
@@ -82,13 +105,10 @@ Notebook	Description
 | 5_Feature_Engineering.ipynb | Creation of time-based features, lags, rolling stats, exponential smoothing, holiday indicators, etc|
 | 6_SARIMAX_Holtwinters_Model.ipynb | Time series forecasting using SARIMAX and Holt-Winters models|
 | 7_XGboost_Model.ipynb | Gradient boosting model (XGBoost) for forecasting with hyperpamrameter tunning|
-| MLflow_experiment_XGboost.ipynb | Model experiment tracking using MLflow|
 
 
 ## 🔧 Key Techniques Used
 * Time-based train-test split
-
-* Log transformation for stabilizing variance
 
 * Feature scaling (StandardScaler)
 
@@ -117,9 +137,9 @@ XGBoost: Machine learning model with custom time features
 * Clone the repository to your local machine using Git.
 * Open command prompt and run the following command:
 ```bash
-git clone https://github.com/NishatFarihaRimi/Time_series_Grocery_Sales_Forecasting
-.git
-cd time_series_forecasting_1
+git clone https://github.com/NishatFarihaRimi/Time_series_Grocery_Sales_Forecasting.git
+cd Time_series_Grocery_Sales_Forecasting
+
 ```
 #### Step 2: (Optional) Set up a Virtual Environment
 Using conda:
