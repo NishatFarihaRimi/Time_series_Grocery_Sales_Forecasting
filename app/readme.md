@@ -74,6 +74,11 @@ train_Guayas_final.csv
 3. Run the notebooks in the project to retrain the XGBoost model.
 
 
+## Screenshots
+
+*Add screenshots here to showcase the UI and plots.*<img width="1456" alt="Screenshot 2025-06-22 at 12 53 07" src="https://github.com/user-attachments/assets/62db93c5-2ae9-40f2-9886-438f58e46881" />
+
+
 ## Running the App Locally
 ### Step 1: Clone the repository:
 
